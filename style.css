@@ -137,3 +137,24 @@ body {
   color: hsl(228, 45%, 44%);
 }
 /* Responsive */
+@media (max-width: 670px) {
+  body {
+    min-height: auto;
+  }
+  main {
+    padding: 2rem;
+  }
+}
+@media (max-width: 570px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .card__header {
+    grid-column: 1;
+  }
+  .card__header,
+  .card__price,
+  .card__about {
+    padding: 2.8rem 2.4rem;
+  }
+}
