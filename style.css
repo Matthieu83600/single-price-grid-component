@@ -25,12 +25,14 @@ html {
 }
 body {
   background-color: var(--light-gray);
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: var(--font-weight-regular);
+}
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 /* H1 */
 .sr-only:not(:focus):not(:active) {
@@ -138,10 +140,8 @@ body {
 }
 /* Responsive */
 @media (max-width: 670px) {
-  body {
-    min-height: auto;
-  }
   main {
+    min-height: auto;
     padding: 2rem;
   }
 }
